@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farino Joshua — Software Engineer</title>
+<meta name="description" content="Farino Joshua is a software engineer in Jakarta building full-stack web apps, Go and Python backends, and the self-hosted infrastructure that runs them.">
+<link rel="canonical" href="https://farino.me/">
+<meta name="theme-color" content="#0b0d10">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://farino.me/">
+<meta property="og:title" content="Farino Joshua — Software Engineer">
+<meta property="og:description" content="Full-stack web apps, Go and Python backends, and the infrastructure that runs them.">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Farino Joshua","jobTitle":"Software Engineer","url":"https://farino.me","address":{"@type":"PostalAddress","addressLocality":"Jakarta","addressCountry":"ID"},"sameAs":["https://github.com/farinojoshua"]}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Farino Joshua, home">
+      <span class="brand-mark" aria-hidden="true">fj</span>
+      <span>farino.me</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero wrap" id="top">
+    <p class="eyebrow mono"><span class="dot" aria-hidden="true"></span>Jakarta, Indonesia · open to work</p>
+    <h1>Farino Joshua<span class="muted">, software engineer.</span></h1>
+    <p class="lede">I build full-stack web apps, backend services in Go and Python, and the infrastructure that keeps them running. Most of what I make is in production, not just in a repo.</p>
+    <div class="cta">
+      <a class="btn primary" href="#work">See my work</a>
+      <a class="btn" href="https://github.com/farinojoshua" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.83-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        GitHub
+      </a>
+    </div>
+
+    <div class="prod card" aria-label="Services I run in production">
+      <div class="prod-head mono">
+        <span>$ systemctl status my-projects</span>
+        <span class="muted">self-hosted · Caddy + Podman</span>
+      </div>
+      <ul>
+        <li><span class="ok" aria-hidden="true"></span><span class="mono">mlbb.farino.me</span><span class="muted">static site · data refreshed daily by cron</span></li>
+        <li><span class="ok" aria-hidden="true"></span><span class="mono">church-finance</span><span class="muted">Next.js + PostgreSQL · church finance reporting</span></li>
+        <li><span class="ok" aria-hidden="true"></span><span class="mono">ai-assistant</span><span class="muted">FastAPI + Next.js 15 · two PostgreSQL databases</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap section" id="work" aria-labelledby="work-title">
+    <div class="section-head">
+      <h2 id="work-title">Selected work</h2>
+      <p class="muted">Things I designed, built and shipped end to end.</p>
+    </div>
+
+    <div class="projects">
+
+      <article class="project card feature">
+        <div class="project-top">
+          <span class="tag mono">Live</span>
+          <h3>MLBB Draft Assistant</h3>
+        </div>
+        <p>A draft-pick simulator for Mobile Legends. It follows the real ban-and-pick order and suggests picks, bans and counters per lane, scores each team's draft, and recommends builds and spells against the enemy lineup.</p>
+        <p class="detail">A Python pipeline pulls tier lists, win/pick/ban rates, matchups and synergies every night, so the advice tracks the current meta without anyone touching it. The app itself is plain HTML, CSS and JavaScript with no build step.</p>
+        <ul class="chips mono"><li>JavaScript</li><li>Python</li><li>Data pipeline</li><li>Cron</li><li>Caddy</li></ul>
+        <div class="links">
+          <a href="https://mlbb.farino.me" target="_blank" rel="noopener">Open app ↗</a>
+          <a href="https://github.com/farinojoshua/mlbb-draftpick-tools" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+
+      <article class="project card">
+        <div class="project-top">
+          <span class="tag mono">In production</span>
+          <h3>Church Finance System</h3>
+        </div>
+        <p>A finance app for GBI Jonggol Raya that replaced a manual Excel-and-PDF workflow. It covers income, attendance, recurring weekly expenses from templates, a six-month trend dashboard and generated reports, with separate admin and treasurer roles.</p>
+        <ul class="chips mono"><li>Next.js</li><li>TypeScript</li><li>PostgreSQL</li><li>Docker</li></ul>
+        <div class="links">
+          <a href="https://lap-keu-gbi-jr.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a href="https://github.com/farinojoshua/lap-keu-gbi-jr" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+
+      <article class="project card">
+        <div class="project-top">
+          <span class="tag mono">In production</span>
+          <h3>AI Assistant</h3>
+        </div>
+        <p>An AI assistant that answers questions over company data. It runs on a FastAPI backend with JWT auth and Alembic migrations, keeps app data and company data in separate PostgreSQL databases, ships with an eval suite, and has a Next.js 15 frontend.</p>
+        <ul class="chips mono"><li>Python</li><li>FastAPI</li><li>OpenAI API</li><li>Next.js 15</li><li>PostgreSQL</li></ul>
+        <div class="links">
+          <a href="https://github.com/farinojoshua/ai-assistant" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+
+      <article class="project card">
+        <div class="project-top">
+          <span class="tag mono">Full stack</span>
+          <h3>Jajanin</h3>
+        </div>
+        <p>A donation platform for Indonesian content creators, in the spirit of Saweria and Ko-fi. Fans can tip creators through the Midtrans payment gateway.</p>
+        <ul class="chips mono"><li>Go</li><li>Gin</li><li>GORM</li><li>PostgreSQL</li><li>JWT</li><li>Midtrans</li><li>Next.js 14</li></ul>
+        <div class="links">
+          <a href="https://github.com/farinojoshua/jajanin-online" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+
+      <article class="project card">
+        <div class="project-top">
+          <span class="tag mono">DevOps</span>
+          <h3>AI-driven CI/CD pipeline</h3>
+        </div>
+        <p>A Jenkins pipeline that turns a GitHub issue labelled <code>ai-task</code> into a pull request. Claude Code writes the change and its tests, then the build passes through test, SonarQube and Trivy stages before a human reviews it.</p>
+        <ul class="chips mono"><li>Jenkins</li><li>Claude Code</li><li>SonarQube</li><li>Trivy</li><li>Node.js</li></ul>
+        <div class="links">
+          <a href="https://github.com/farinojoshua/e-learning-aza" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+
+      <article class="project card">
+        <div class="project-top">
+          <span class="tag mono">Frontend</span>
+          <h3>Sakama System</h3>
+        </div>
+        <p>A marketing site for a software house, with service pages, a portfolio and a light/dark theme, built with the Next.js App Router.</p>
+        <ul class="chips mono"><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li></ul>
+        <div class="links">
+          <a href="https://sakama-system.vercel.app" target="_blank" rel="noopener">Live ↗</a>
+          <a href="https://github.com/farinojoshua/sakama-system" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="more">
+      <h3 class="mono small">More on GitHub</h3>
+      <ul class="more-list">
+        <li><a href="https://github.com/farinojoshua/ewallet-ums" target="_blank" rel="noopener">ewallet-ums</a><span class="muted">User management service for an e-wallet · Go</span></li>
+        <li><a href="https://github.com/farinojoshua/go-online-shop-api" target="_blank" rel="noopener">go-online-shop-api</a><span class="muted">REST API for an online shop · Go</span></li>
+        <li><a href="https://github.com/farinojoshua/GolangSimpleMessagingApp" target="_blank" rel="noopener">GolangSimpleMessagingApp</a><span class="muted">Messaging app · Go Fiber, GORM, PostgreSQL</span></li>
+        <li><a href="https://github.com/farinojoshua/echo-postgre-crud" target="_blank" rel="noopener">echo-postgre-crud</a><span class="muted">CRUD service · Go Echo, PostgreSQL</span></li>
+        <li><a href="https://github.com/farinojoshua/at_clinic_be" target="_blank" rel="noopener">at_clinic</a><span class="muted">Clinic management app · React, Node.js</span></li>
+        <li><a href="https://github.com/farinojoshua/belajar-spring" target="_blank" rel="noopener">belajar-spring</a><span class="muted">Spring Boot practice · Java</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap section" id="stack" aria-labelledby="stack-title">
+    <div class="section-head">
+      <h2 id="stack-title">Stack</h2>
+      <p class="muted">What I reach for, grouped by layer.</p>
+    </div>
+    <div class="stack">
+      <div class="card stack-col">
+        <h3 class="mono small">Languages</h3>
+        <p>Go, TypeScript, JavaScript, Python, Java, PHP</p>
+      </div>
+      <div class="card stack-col">
+        <h3 class="mono small">Backend</h3>
+        <p>Gin, Fiber, Echo, FastAPI, Node.js / Express, Spring Boot, Laravel</p>
+      </div>
+      <div class="card stack-col">
+        <h3 class="mono small">Frontend</h3>
+        <p>React, Next.js, Tailwind CSS, Vite</p>
+      </div>
+      <div class="card stack-col">
+        <h3 class="mono small">Data</h3>
+        <p>PostgreSQL, Redis, GORM, SQLAlchemy, Alembic</p>
+      </div>
+      <div class="card stack-col">
+        <h3 class="mono small">Infra &amp; DevOps</h3>
+        <p>Linux, Docker / Podman, Caddy, Jenkins, SonarQube, Trivy</p>
+      </div>
+      <div class="card stack-col">
+        <h3 class="mono small">AI tooling</h3>
+        <p>OpenAI API, Claude Code, LLM evals</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section about" id="about" aria-labelledby="about-title">
+    <div class="section-head">
+      <h2 id="about-title">About</h2>
+    </div>
+    <div class="about-body">
+      <p>I'm a software engineer based in Jakarta. I like owning a product from the database schema to the deploy script: designing the API, building the interface, then running it on my own server and keeping it healthy.</p>
+      <p>My day-to-day is mostly Go and TypeScript, with Python for data and AI work. Lately I've been pulling LLMs into real workflows, both as product features and inside CI/CD, where they draft code that still goes through tests, scanners and a human review.</p>
+    </div>
+  </section>
+
+  <section class="wrap section contact" id="contact" aria-labelledby="contact-title">
+    <div class="card contact-card">
+      <h2 id="contact-title">Let's build something.</h2>
+      <p class="muted">Open to full-time roles and freelance projects. The fastest way to reach me is on GitHub.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/farinojoshua" target="_blank" rel="noopener">github.com/farinojoshua</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap footer muted mono">
+  <span>© <span id="year">2026</span> Farino Joshua</span>
+  <span>Static HTML · served by GitHub Pages</span>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
